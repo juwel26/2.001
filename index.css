@@ -159,3 +159,74 @@ button:active {
   position: absolute;
   border: 1px solid ;
 }
+
+.hisab{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  
+}
+
+#joma{
+  padding: 0px 15px ;
+  background-color: green;
+  color: #efefef;
+  width: 200px;
+  height: auto;
+  margin-left: 10px;
+}
+#withdraw{
+  padding: 0px 15px ;
+  background-color: brown;
+  color: #efefef;
+  width: 200px;
+  height: auto;
+}
+#total{
+  padding: 0px 15px ;
+  background-color: chocolate;
+  color: #efefef;
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+#demo{
+
+  height: auto;
+  width: auto;
+  border: 1px solid white ;
+  color: brown;
+  font-size: larger;
+  padding: 10px ;
+}
+#demo2{
+
+  height: auto;
+  width: auto;
+  border: 1px solid black ;
+  color: white;
+  font-size: larger;
+  padding: 10px ;
+}
+#demo3{
+
+  height: auto;
+  width: auto;
+  border: 1px solid black ;
+  color: brown;
+  font-size: larger;
+  padding: 10px ;
+}
+
+#input{
+   margin: 20px;
+}
+
+#btn{
+  margin-bottom: 10px;
+}

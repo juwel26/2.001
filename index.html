@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
    <link rel="icon" type="image/x-icon" href="./img/logo.png">
-  <script src="https://cdn.tailwindcss.com"></script> -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
-  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script> 
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css"> -->
 </head>
 <title>Home</title>
 </head>
@@ -58,17 +60,38 @@
 
 <p id="demo"></p> -->
 
-
-
-<div id="box">
-  <div id="animation">
-    
+<!-- banlance show section -->
+<div class="bankInfo flex gap-2 justify-between text-center align-middle m-5  ">
+  <div class="deposite bg-emerald-500 p-10 rounded-lg text-white shadow-lg ">
+    <h4 class="text-lg font-bold" >diposite</h4>
+    <h2 >$<span id="dpositeAmount" class=" font-semibold" >00</span></h2>
+  </div>
+  <div class="deposite bg-orange-600 p-10 rounded-lg text-white shadow-lg ">
+    <h4 class="text-lg font-bold" >withdrow</h4>
+    <h2>$<span id="withdrawBalance" class=" font-semibold">00</span></h2>
+  </div>
+  <div class="deposite bg-indigo-500 p-10 rounded-lg text-white shadow-lg">
+    <h4 class="text-lg font-bold" >currentBalance</h4>
+    <h2>$<span id="currentBalance" class=" font-semibold">00</span></h2>
   </div>
 </div>
 
+<!-- input calculation of balance -->
 
-<button  onclick="myanimate() "> click me</button>
-
+<div class="inputFild flex justify-between m-32  p-10 shadow-lg ">
+  <div class="addBal ">
+    <h4 class="font-semibold mb-2" >addAmount</h4>
+      <input id="inputaddBal" class=" border-[1px] border-cyan-600 " type="text" placeholder="$ type your deposite amount" >
+    <button id="deposite" class="p-2 mt-2 bg-green-600 rounded-md text-white" >Diposite</button> <br>
+    <span id="demo" ></span>
+  </div>
+  <div class="withdraw">
+    <h4 class="font-semibold mb-2">withdraw</h4>
+     <input id="inputwidthdrawbal" class=" border-[1px] border-cyan-600 " type="text" placeholder="$ type your deposite amount" >
+      <button id="widthdrawbtn" class="p-2 mt-2 bg-green-600 rounded-md text-white"   >withdraw</button> <br>
+      <span id="demo2"></span>
+    </div>
+</div>
 
 
 
@@ -102,6 +125,9 @@ let button = document.getElementById('btn')
 button.addEventListener('click', myFunction())
 
 </script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
 <script src="./index.js"></script>
 </body>
 
