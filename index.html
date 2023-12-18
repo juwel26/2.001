@@ -61,12 +61,12 @@
 <p id="demo"></p> -->
 
 <!-- banlance show section -->
-<div class="bankInfo flex gap-2 justify-between text-center align-middle m-5  ">
+<div class="bankInfo flex-wrap md:flex gap-2 justify-between text-center align-middle m-5  ">
   <div class="deposite bg-emerald-500 p-10 rounded-lg text-white shadow-lg ">
     <h4 class="text-lg font-bold" >diposite</h4>
     <h2 >$<span id="dpositeAmount" class=" font-semibold" >00</span></h2>
   </div>
-  <div class="deposite bg-orange-600 p-10 rounded-lg text-white shadow-lg ">
+  <div class="deposite bg-orange-600 p-10 rounded-lg text-white shadow-lg m-5 ">
     <h4 class="text-lg font-bold" >withdrow</h4>
     <h2>$<span id="withdrawBalance" class=" font-semibold">00</span></h2>
   </div>
@@ -78,14 +78,14 @@
 
 <!-- input calculation of balance -->
 
-<div class="inputFild flex justify-between m-32  p-10 shadow-lg ">
-  <div class="addBal ">
+<div class="inputFild flex-wrap md:flex justify-between m-2 md:m-32 p-2 md:p-10 shadow-lg ">
+  <div class="addBal h-auto w-full ">
     <h4 class="font-semibold mb-2" >addAmount</h4>
       <input id="inputaddBal" class=" border-[1px] border-cyan-600 " type="text" placeholder="$ type your deposite amount" >
     <button id="deposite" class="p-2 mt-2 bg-green-600 rounded-md text-white" >Diposite</button> <br>
     <span id="demo" ></span>
   </div>
-  <div class="withdraw">
+  <div class="withdraw mt-5">
     <h4 class="font-semibold mb-2">withdraw</h4>
      <input id="inputwidthdrawbal" class=" border-[1px] border-cyan-600 " type="text" placeholder="$ type your deposite amount" >
       <button id="widthdrawbtn" class="p-2 mt-2 bg-green-600 rounded-md text-white"   >withdraw</button> <br>

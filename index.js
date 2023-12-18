@@ -214,9 +214,7 @@ const diposite = document.getElementById("deposite");
 diposite.addEventListener("click", () => {
   const adddiposte = document.getElementById("inputaddBal").value;
   const addBalanceNumber = parseFloat(adddiposte);
-  const currentaddamount = parseFloat(
-    document.getElementById("dpositeAmount").innerText
-  );
+  const currentaddamount = parseFloat(document.getElementById("dpositeAmount").innerText);
   addBalance(addBalanceNumber, currentaddamount);
   document.getElementById("inputaddBal").value = "";
 });
@@ -231,14 +229,14 @@ function addBalance(addBalanceNumber, currentaddamount) {
     },2000)
   } else {
    const depositeamountt=  document.getElementById("dpositeAmount").innerText = addBalanceNumber + currentaddamount;
-    alart.innerHTML = ` You have successfully deposite is ${depositeamountt} `
+    document.getElementById("currentBalance").innerHTML = currentaddamount + addBalanceNumber;
+   alart.innerHTML = ` You have successfully deposite is ${depositeamountt} `
     alart.style.color = "green"
     setTimeout(()=>{
       alart.innerHTML = ''
     },2000)
   }
-  document.getElementById("currentBalance").innerHTML =
-    currentaddamount + addBalanceNumber;
+  
 
 }
 
